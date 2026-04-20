@@ -1,19 +1,17 @@
 # Sistema de Registro de Productos - Supermercado
 
-Aplicación front-end desarrollada en React que consume una API REST simulada con MockAPI.
+Aplicación desarrollada en React que consume API REST simulada con MockAPI.
 
 ## Tecnologías utilizadas
 - React
 - MockAPI
-- Swagger (OpenAPI 3.0)
-- CSS3
+- Swagger
 
 ## Funcionalidades
 - Listar productos (GET)
 - Crear producto (POST)
 - Eliminar producto (DELETE)
 - Manejo de errores con try/catch
-- Manejo de estado con useState
 
 ## Estructura del proyecto
 
