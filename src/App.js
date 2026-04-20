@@ -33,7 +33,7 @@ function App() {
   const handleEliminar = async (id) => {
     try {
       await eliminarProducto(id);
-      setProductos(productos.filter((p) => p.id !== id));
+      setProductos(productos.filter((p) => p.productos !== id));
     } catch (error) {
       setMensajeError("Error al eliminar el producto.");
     }
@@ -43,7 +43,7 @@ function App() {
     <div className="app">
       <header>
         <h1>🛒 Supermercado</h1>
-        <p>Sistema de registro de productos - Ingeniería Web 2</p>
+        <p>Sistema de registro de productos</p>
       </header>
 
       <main>

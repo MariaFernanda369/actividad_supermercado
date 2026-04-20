@@ -24,12 +24,12 @@ function ProductoList({ productos, onEliminar }) {
         </thead>
         <tbody>
           {productos.map((p) => (
-            <tr key={p.id}>
-              <td><span className="id-badge">#{p.id}</span></td>
+            <tr key={p.productos}>
+              <td><span className="id-badge">#{p.productos}</span></td>
               <td>{p.nombre}</td>
-              <td><span className="precio-text">${p.precio.toLocaleString()}</span></td>
+              <td><span className="precio-text">${p.precio ? p.precio.toLocaleString() : "0"}</span></td>
               <td>
-                <button className="btn-eliminar" onClick={() => onEliminar(p.id)}>
+                <button className="btn-eliminar" onClick={() => onEliminar(p.productos)}>
                   Eliminar
                 </button>
               </td>
